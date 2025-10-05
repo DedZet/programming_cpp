@@ -80,6 +80,9 @@ int main() {
     Fract c;
 
     if (c.compare(a) == 0) {
-        std::cout << "Дроби равны";
+        std::cout << "Дроби равны\n";
     }
+
+    b.sub(c);
+    b.info();
 }
