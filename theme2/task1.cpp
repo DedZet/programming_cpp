@@ -2,7 +2,7 @@
 
 class Fract {
     public:
-    int numer;    // Числитель
+    int numer;  // Числитель
     int denom;  // Знаменатель
 
     Fract() {
