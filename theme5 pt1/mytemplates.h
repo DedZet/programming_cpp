@@ -61,5 +61,26 @@ T medium(T* arr, int size)
     return result / size;
 }
 
-#endif
+template <class T>
+int amountMore(T* arr, int size, T value) {
+    int result = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] > value) {
+            result++;
+        }
+    }
+    return result;
+}
 
+template <class T>
+int amountLess(T* arr, int size, T value) {
+    int result = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < value) {
+            result++;
+        }
+    }
+    return result;
+}
+
+#endif
